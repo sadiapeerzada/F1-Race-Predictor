@@ -158,7 +158,9 @@ Displays top 3 podium predictions with probabilities
 
 Optionally visualizes feature importance and historical charts
 
-##🏎️ Example Layout
+---
+## 🏎️ Example Layout
+
 ```bash
 
  🏎️ F1 Race Predictor
