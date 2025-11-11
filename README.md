@@ -91,13 +91,13 @@ This step will:
 
 ## ✅ Preprocess historical data
 
-🔠 Encode categorical features (driver, constructor, etc.)
++ 🔠 Encode categorical features (driver, constructor, etc.)
 
-🌳 Train a Random Forest Classifier
++ 🌳 Train a Random Forest Classifier
 
-💾 Save the trained model as f1_model.pkl
++ 💾 Save the trained model as f1_model.pkl
 
-💡 Tip: If f1_model.pkl already exists, you can skip this step.
++ 💡 Tip: If f1_model.pkl already exists, you can skip this step.
 
 ----
 
@@ -116,33 +116,33 @@ View predictions for the winner and podium finishers
 ```
 ## 🧠 How It Works
 
-##🔹 Data Preprocessing
-Loads CSV data using pandas
+## 🔹 Data Preprocessing
++ Loads CSV data using pandas
 
-Handles missing values and performs cleaning
++ Handles missing values and performs cleaning
 
-Encodes categorical columns using LabelEncoder / OneHotEncoder
++ Encodes categorical columns using LabelEncoder / OneHotEncoder
 
-Normalizes numerical features like grid position and laps
++ Normalizes numerical features like grid position and laps
 
-##🔹 Model Training
-Uses Random Forest Classifier from scikit-learn
+## 🔹 Model Training
++ Uses Random Forest Classifier from scikit-learn
 
-Splits dataset into 80:20 train-test ratio
++ Splits dataset into 80:20 train-test ratio
 
-Learns race outcome probabilities
++ Learns race outcome probabilities
 
-Optionally supports regression for lap time prediction
++ Optionally supports regression for lap time prediction
 
-##🔹 Model Evaluation
-Evaluated using accuracy, precision, and confusion matrix
+## 🔹 Model Evaluation
++ Evaluated using accuracy, precision, and confusion matrix
 
-Feature importance plotted for interpretability
++ Feature importance plotted for interpretability
 
-##🔹 Model Saving
-Trained model is serialized as f1_model.pkl using pickle
+## 🔹 Model Saving
++ Trained model is serialized as f1_model.pkl using pickle
 
-Enables fast inference without retraining
++ Enables fast inference without retraining
 
 ----
 
