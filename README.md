@@ -33,84 +33,107 @@ Predict **F1 race winners and podium positions** using historical data and machi
 ## 💻 Getting Started
 
 ### 1️⃣ Clone the Repository
+## ⚙️ Setup Instructions
 
+### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/yourusername/f1-race-predictor.git
 cd f1-race-predictor
+```
 2️⃣ Install Dependencies
-bash
-Copy code
+```
 pip install -r requirements.txt
+```
 Dependencies:
-pandas, numpy, scikit-learn, streamlit, matplotlib
+
+pandas
+
+numpy
+
+scikit-learn
+
+streamlit
+
+matplotlib
 
 3️⃣ Prepare Dataset
-Upload your F1 dataset ZIP to the dataset/ folder.
+
+Upload your F1 dataset ZIP file to the dataset/ folder.
 
 Unzip it inside the folder.
 
-Ensure CSV files are accessible (e.g., f1_race_results.csv).
+Ensure CSV files (e.g., f1_race_results.csv) are accessible.
 
 4️⃣ Train the Model (Optional)
-bash
-Copy code
+```
 python model.py
-Preprocess data
+```
+This will:
+
+Preprocess the data
 
 Train a Random Forest Classifier
 
-Save model as f1_model.pkl
+Save the trained model as f1_model.pkl
 
-If f1_model.pkl already exists, you can skip this step.
+💡 If f1_model.pkl already exists, you can skip this step.
 
 5️⃣ Run the Streamlit App
-bash
-Copy code
+```
 streamlit run app.py
-Input race details: Track, Weather, Grid position
+```
+
+Then:
+
+Input race details: Track, Weather, and Grid position
 
 Click Predict Winner
 
 View predicted winner and top 3 podium probabilities
 
 📂 Project Structure
-graphql
-Copy code
+
 f1-race-predictor/
 │
-├── dataset/                 # CSV files from F1 historical data
-├── model.py                 # Data preprocessing & model training
-├── app.py                   # Streamlit web interface
-├── f1_model.pkl             # Saved trained model
-├── requirements.txt         # Python dependencies
+├── dataset/                 
+├── model.py                
+├── app.py                   
+├── f1_model.pkl             
+├── requirements.txt        
 ├── README.md
-└── assets/                  # Screenshots / GIFs for README
+└── assets/                  
+
+---
+
 ⚙️ How It Works
-Data Preprocessing
+🧠 Data Preprocessing
 
 Load historical race data (CSV) using pandas
 
 Encode categorical features: driver, constructor, track, weather
 
-Select numeric features: grid position, laps, driver/constructor stats
+Select numerical features: grid position, laps, driver/constructor stats
 
-Model Training
+🤖 Model Training
 
 Random Forest Classifier predicts race winners
 
 Optional regression model predicts lap times or finishing positions
 
-Model saved using pickle for quick loading
+Model is saved using pickle for quick loading
 
-Streamlit Interface
+💻 Streamlit Interface
 
 Users select race details
 
-Model predicts winner and top 3 podium
+Model predicts winner and top 3 podium finishers
 
 Optional charts: historical stats, feature importance
 
+----
+
 📈 Example Output
+
 Input	Predicted Winner	Podium
 Track: Monza
 Weather: Dry
@@ -123,7 +146,9 @@ Grid: 10	Max Verstappen	1) Verstappen
 2) Hamilton
 3) Leclerc
 
+----
 🚀 Future Improvements
+
 Predict lap times for all drivers
 
 Forecast championship standings
@@ -134,10 +159,12 @@ Integration with live F1 API for real-time predictions
 
 Enhanced dashboard with track maps and interactive charts
 
+----
 📚 Data Sources
-Ergast F1 API – Official historical F1 data
 
-Kaggle F1 Datasets – Race results, qualifying, lap times
+Ergast F1 API
+ – Official historical F1 data
 
-📝 License
-MIT License – Free for personal and educational use.
+Kaggle F1 Datasets
+ – Race results, qualifying, lap times
+
