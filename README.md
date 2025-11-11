@@ -67,8 +67,8 @@ bash
 pip install -r requirements.txt
 ```
 ## 3️⃣ Prepare the Dataset
-Upload your F1 dataset ZIP file into the dataset/ folder.
-Unzip the file in place, ensuring that all CSVs are inside.
++ Upload your F1 dataset ZIP file into the dataset/ folder.
++ Unzip the file in place, ensuring that all CSVs are inside.
 
 ## 🗂️ Example Directory Structure
 ```bash
@@ -150,13 +150,13 @@ View predictions for the winner and podium finishers
 The Streamlit app (app.py) serves as the web-based interface for predictions.
 
 ## ✨ Features
-Dropdowns for selecting Track, Weather, and Grid Position
++ Dropdowns for selecting Track, Weather, and Grid Position
 
-“Predict Winner” button triggers model inference
++ “Predict Winner” button triggers model inference
 
-Displays top 3 podium predictions with probabilities
++ Displays top 3 podium predictions with probabilities
 
-Optionally visualizes feature importance and historical charts
++ Optionally visualizes feature importance and historical charts
 
 ---
 ## 🏎️ Example Layout
@@ -216,14 +216,14 @@ f1-race-predictor/
 
 ## 🧩 Technologies Used
 
-Category	Technology
-Programming Language	Python
-Machine Learning	Scikit-learn
-Data Handling	Pandas, NumPy
-Visualization	Matplotlib
-Web Framework	Streamlit
-Model Storage	Pickle
-Data Sources	Ergast API, Kaggle F1 Datasets
++ Category	Technology
++ Programming Language	Python
++ Machine Learning	Scikit-learn
++ Data Handling	Pandas, NumPy
++ Visualization	Matplotlib
++ Web Framework	Streamlit
++ Model Storage	Pickle
++ Data Sources	Ergast API, Kaggle F1 Datasets
 
 ---
 
@@ -239,9 +239,9 @@ Data Sources	Ergast API, Kaggle F1 Datasets
 🗺️ Interactive Visuals: Add track maps & telemetry dashboards
 
 ## 📚 Data Sources
-Ergast F1 API — Official F1 race data and metadata
++ Ergast F1 API — Official F1 race data and metadata
 
-Kaggle F1 Datasets — Historical qualifying, lap, and race data
++ Kaggle F1 Datasets — Historical qualifying, lap, and race data
 
 ---
 ## 🧾 License
